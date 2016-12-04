@@ -1,0 +1,103 @@
+@import "_normalize.scss";
+@import "_mixin.scss";
+@import "_setting.scss";
+@import "_header.scss";
+
+$rm:'firasans-medium-webfont';
+$rr:'firasans-regular-webfont';
+$rb:'firasans-bold-webfont';
+$rl:'firasans-light-webfont';
+$black: #212121;
+$gray: #727272;
+$green: #8cc34b;
+@font-face{
+    font-family: "firasans-medium-webfont";
+    src: url("../fonts/firasans-medium-webfont.eot");
+    src: url("../fonts/firasans-medium-webfont?#iefix") format("embedded-opentype"),
+         url("../fonts/firasans-medium-webfont.woff") format("woff"),
+         url("../fonts/firasans-medium-webfont.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: "firasans-regular-webfont";
+    src: url("../fonts/firasans-regular-webfont.eot");
+    src: url("../fonts/firasans-regular-webfont?#iefix") format("embedded-opentype"),
+         url("../fonts/firasans-regular-webfont.woff") format("woff"),
+         url("../fonts/firasans-regular-webfont.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: "firasans-bold-webfont";
+    src: url("../fonts/firasans-bold-webfont.eot");
+    src: url("../fonts/firasans-bold-webfont?#iefix") format("embedded-opentype"),
+         url("../fonts/firasans-bold-webfont.woff") format("woff"),
+         url("../fonts/firasans-bold-webfont.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: "firasans-light-webfont";
+    src: url("../fonts/firasans-light-webfont.eot");
+    src: url("../fonts/firasans-light-webfont?#iefix") format("embedded-opentype"),
+         url("../fonts/firasans-light-webfont.woff") format("woff"),
+         url("../fonts/firasans-light-webfont.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+	font-size: 16px;
+	line-height: 1.6;
+	font-family: $rm;
+	overflow: hidden;
+    width: 100%;
+    height:100%;
+
+}
+.clearfix{
+  &::before{
+    content: '';
+    display: table;
+  }
+  &::after{
+    content: '';
+    display: table; 
+    clear: both;
+  }
+}
+.header{
+  overflow: hidden;
+}
+.container{
+  width:100%;
+  height:100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  box-shadow: 0px 0px 20px 13px rgba(255,255,255,1);
+  &-1{
+    background: url("../img/foto-1.jpg");
+  }
+  &-2{
+    background: url("../img/foto-2.jpg");
+  }
+  &-3{
+    background: url("../img/foto-3.jpg");
+  }
+  &__tittle{
+    font-size:30px;
+    color: white;
+  }
+  &__wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:960px;
+    height:100%;
+    margin: 0 auto;
+  }
+}
+
+@import "_media.scss";

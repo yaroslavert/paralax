@@ -1,0 +1,78 @@
+$rm:'roboto-medium';
+$rr:'roboto-regular';
+$sw:'Sansus-Webissimo-Regular';
+$rb:'roboto-bold';
+$rl:'roboto-light';
+$rbi:'roboto-bolditalic';
+$rli:'roboto-lightitalic';
+$ri:'roboto-italic';
+@mixin tr($time){
+	transition: all $time ease;
+}
+@mixin em($px){
+	font-size:($px/16)+em;
+}
+@font-face{
+    font-family: "roboto-medium";
+    src: url("../fonts/roboto/roboto-medium.eot");
+    src: url("../fonts/roboto/roboto-medium.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/roboto/roboto-medium.woff") format("woff"),
+         url("../fonts/roboto/roboto-medium.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: "roboto-regular";
+    src: url("../fonts/roboto/roboto-regular.eot");
+    src: url("../fonts/roboto/roboto-regular.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/roboto/roboto-regular.woff") format("woff"),
+         url("../fonts/roboto/roboto-regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: "roboto-bold";
+    src: url("../fonts/roboto/roboto-bold.eot");
+    src: url("../fonts/roboto/roboto-bold.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/roboto/roboto-bold.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: "roboto-light";
+    src: url("../fonts/roboto/roboto-light.eot");
+    src: url("../fonts/roboto/roboto-light.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/roboto/roboto-light.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: "roboto-bolditalic";
+    src: url("../fonts/roboto/roboto-bolditalic.eot");
+    src: url("../fonts/roboto/roboto-bolditalic.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/roboto/roboto-bolditalic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: "roboto-lightitalic";
+    src: url("../fonts/roboto/roboto-lightitalic.eot");
+    src: url("../fonts/roboto/roboto-lightitalic.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/roboto/roboto-lightitalic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: "roboto-italic";
+    src: url("../fonts/roboto/roboto-italic.eot");
+    src: url("../fonts/roboto/roboto-italic.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/roboto/roboto-italic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: "Sansus-Webissimo-Regular";
+    src: url("../fonts/Sansus-Webissimo-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
